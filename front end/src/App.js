@@ -1,8 +1,12 @@
 import logo from './1583522.svg';
 import './App.css';
 import { Button, Form} from 'react-bootstrap';
+import PrimerFormulario from './componente/PrimerFormulario';
+import {useState} from 'react';
 
 function App() {
+const [personanombre, setpersona] = useState ("Alvaro");
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,7 +21,7 @@ function App() {
           rel="noopener noreferrer"
         >
         </a>
-        <Button variant = "primary" > wato </Button> {''}
+        <PrimerFormulario personanombre={personanombre} />
       </header>
     </div>
   );
